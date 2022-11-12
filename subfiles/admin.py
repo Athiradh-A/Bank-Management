@@ -1,5 +1,4 @@
 import mysql.connector
-from texttable import *
 
 connection = mysql.connector.connect(host = 'localhost',
                                     user = 'root',passwd = 'admin')     
@@ -39,3 +38,7 @@ if int(passwd) == paswd:
                     more = input("search more?(Y/N)")
     
         again = input("Do again?(Y/N)")
+
+
+else:
+    print("You're not the admin!")
